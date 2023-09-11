@@ -1,4 +1,4 @@
-import './App.css';
+import './Week01.css';
 // import HW01 from './Components/Week1/HW01/HW01';
 // import HW02_Content from './Components/Week1/HW02/HW02_Content';
 // import HW02_Footer from './Components/Week1/HW02/HW02_Footer';
@@ -8,9 +8,9 @@ import Skills from './Components/Week1/HW03/Skills/Skills';
 import Footer from './Components/Week1/HW03/Layout/Footer';
 import Header from './Components/Week1/HW03/Layout/Header';
 
-function App() {
+function Week01() {
   return (
-    <div className="App">
+    <div className="Week01">
       
       {/* <HW01/> */}
 
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default Week01;
