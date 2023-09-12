@@ -7,23 +7,37 @@ import About from './Components/Week1/HW03/About/About';
 import Skills from './Components/Week1/HW03/Skills/Skills';
 import Footer from './Components/Week1/HW03/Layout/Footer';
 import Header from './Components/Week1/HW03/Layout/Header';
+import LoginForm from './Components/Week1/HW04/LoginForm';
+import Layout from './Components/Week1/HW05/Layout';
 
 function Week01() {
   return (
-    <div className="Week01">
-      
-      {/* <HW01/> */}
+    // <div className='Week01'>
+    //   과제 1
+    //   <HW01/>
 
-      {/* <HW02_Header/>
-      <HW02_Content/>
-      <HW02_Footer/> */}
+    //   과제 2
+    //   <HW02_Header/>
+    //   <HW02_Content/>
+    //   <HW02_Footer/>
 
+    //   과제 3
+    //   <Header/>
+    //   <About/>
+    //   <Skills/>
+    //   <Footer/>
+
+    //   과제 4
+    //   <LoginForm/>
+    // </div>
+
+    //   과제 5
+    <Layout>
       <Header/>
       <About/>
       <Skills/>
       <Footer/>
-
-    </div>
+    </Layout>
   );
 }
 
