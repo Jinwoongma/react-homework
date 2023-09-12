@@ -7,8 +7,9 @@ import About from './Components/Week1/HW03/About/About';
 import Skills from './Components/Week1/HW03/Skills/Skills';
 import Footer from './Components/Week1/HW03/Layout/Footer';
 import Header from './Components/Week1/HW03/Layout/Header';
-import LoginForm from './Components/Week1/HW04/LoginForm';
-import Layout from './Components/Week1/HW05/Layout';
+// import Layout from './Components/Week1/HW05/Layout';
+import Layout from './Components/Week1/HW06/Layout';
+import LoginForm from './Components/Week1/HW06/LoginForm';
 
 function Week01() {
   return (
@@ -32,11 +33,14 @@ function Week01() {
     // </div>
 
     //   과제 5
+    // <Layout>
+    //   <Header/>
+    //   <About/>
+    //   <Skills/>
+    //   <Footer/>
+    // </Layout>
     <Layout>
-      <Header/>
-      <About/>
-      <Skills/>
-      <Footer/>
+      <LoginForm/>
     </Layout>
   );
 }
