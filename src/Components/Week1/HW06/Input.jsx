@@ -1,12 +1,12 @@
 import React from 'react'
 import './Input.css'
 
-const Input = ({ label, type, isRequired, placeHolder }) => {
+const Input = ({ label, id, type, isRequired, placeHolder, value, event, children }) => {
   return (
     <>
       <div className='input-wrapper'>
         <div className='label-wrapper'>
-          <label>{label}</label>
+          <label htmlFor={id}>{label}</label>
           {isRequired && (
             <>
               <span>필수</span>
@@ -14,7 +14,15 @@ const Input = ({ label, type, isRequired, placeHolder }) => {
             </>
           )}
         </div>
-        <input className='login-form-input' type={type} placeholder={placeHolder} required={isRequired}></input>
+        <input className='login-form-input' 
+          id={id}
+          type={type} 
+          placeholder={placeHolder} 
+          required={isRequired} 
+          value={value}
+          onChange={event}
+          autoComplete='on'/>
+        {children}
       </div>
     </>
   )

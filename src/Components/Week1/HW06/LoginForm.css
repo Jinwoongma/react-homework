@@ -1,8 +1,15 @@
-.login-form {
-  align-items: center;
-  text-align: center;
+.login-layout {
+  width: 250px;
+  margin: auto;
 }
 
-.login-form-header {
+.login-layout-header {
+  text-align: center;
   padding: 20px;
+}
+
+.validateion-msg {
+  font-size: 12px;
+  color: red;
+  text-align: left;
 }

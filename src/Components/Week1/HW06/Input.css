@@ -1,5 +1,5 @@
 .input-wrapper {
-  width: 250px;
+  width: 100%;
   margin: auto;
   padding-bottom: 20px;
 }
@@ -22,7 +22,7 @@
 }
 
 .login-form-input {
-  width: 100%;
+  width: calc(100% - 20px);
   height: 25px;
   padding: 10px;
   font-size: 16px;

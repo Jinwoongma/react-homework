@@ -9,7 +9,7 @@
 .layout {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   height: 100vh;
 }
 
