@@ -23,14 +23,14 @@ const LoginForm = () => {
     const { id, value } = e.target;
     setInputs({
       ...inputs, // 기존의 input 객체를 복사한 뒤
-      [id]: value // name 키를 가진 값을 value 로 설정
+      [id]: value // name 키를 가진 값을 value 로 설정 (불변성 유지)
     });
   }
 
   const handleSubmit = (e) => {
     console.log(inputs);
     if (passwordCheck) {
-      alert('환영합니다!');
+      alert(`${inputs.name}님 환영합니다!`);
     } else {
       alert('비밀번호가 일치하지 않습니다.');
       e.preventDefault();
