@@ -9,7 +9,7 @@ import Footer from './Components/Week1/HW03/Layout/Footer';
 import Header from './Components/Week1/HW03/Layout/Header';
 // import Layout from './Components/Week1/HW05/Layout';
 import Layout from './Components/Week1/HW06/Layout';
-import LoginForm from './Components/Week1/HW06/LoginForm';
+import SignupForm from './Components/Week1/HW06/SignupForm';
 
 function Week01() {
   return (
@@ -40,7 +40,7 @@ function Week01() {
     //   <Footer/>
     // </Layout>
     <Layout>
-      <LoginForm/>
+      <SignupForm/>
     </Layout>
   );
 }

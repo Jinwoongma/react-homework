@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Input from './Input'
-import "./LoginForm.css"
+import "./SignupForm.css"
 import Button from './Button'
 
 const LoginForm = () => {
