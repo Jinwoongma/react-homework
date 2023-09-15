@@ -4,6 +4,22 @@ import "./LoginForm.css"
 import Button from './Button'
 
 const LoginForm = () => {
+
+  const ID_FIELD = {
+    "EMAIL" : "email",
+    "PASSWORD" : "password",
+    "PASSWORD_CONFIRM" : "passwordConfirm",
+    "NAME" : "name",
+    "AGE" : 'age'
+  }
+  
+  const LABEL_FIELD = {
+    [ID_FIELD.EMAIL]: "이메일",
+    [ID_FIELD.PASSWORD]: "비밀번호",
+    [ID_FIELD.PASSWORD_CONFIRM]: "비밀번호 확인",
+    [ID_FIELD.NAME]: "이름",
+    [ID_FIELD.AGE]: "나이"
+  } 
   
   const [inputs, setInputs] = useState({
     email: '',
@@ -41,42 +57,42 @@ const LoginForm = () => {
     <div className='login-layout'>
       <h1 className='login-layout-header'>회원가입</h1>
       <form className='login-form' onSubmit={handleSubmit}>
-        <Input id="email"
-          label="이메일"   
+        <Input id={ID_FIELD.EMAIL}
+          label={LABEL_FIELD[ID_FIELD.EMAIL]}  
           type="email" 
           isRequired={true} 
-          placeHolder="이메일을 입력하세요" 
+          placeHolder={`${LABEL_FIELD[ID_FIELD.EMAIL]}을 입력하세요`}
           value={inputs.email}
           event={onInputChange}/>
-        <Input id="password" 
-          label="비밀번호" 
+        <Input id={ID_FIELD.PASSWORD}
+          label={LABEL_FIELD[ID_FIELD.PASSWORD]}  
           type="password" 
           isRequired={true} 
-          placeHolder="비밀번호를 입력하세요" 
+          placeHolder={`${LABEL_FIELD[ID_FIELD.PASSWORD]}를 입력하세요`}
           value={inputs.password} 
           event={onInputChange}/>
-        <Input id="passwordConfirm" 
-          label="비밀번호 재확인" 
+        <Input id={ID_FIELD.PASSWORD_CONFIRM}
+          label={LABEL_FIELD[ID_FIELD.PASSWORD_CONFIRM]}  
           type="password" 
           isRequired={true} 
-          placeHolder="비밀번호를 다시 입력하세요" 
+          placeHolder={`${LABEL_FIELD[ID_FIELD.PASSWORD]}를 다시 입력하세요`}
           value={inputs.passwordConfirm} 
           event={onInputChange}
           >{!passwordCheck && 
               <span className='validateion-msg'>비밀번호가 일치하지 않습니다</span>
           }</Input>
-        <Input id="name" 
-          label="이름"   
+        <Input id={ID_FIELD.NAME}
+          label={LABEL_FIELD[ID_FIELD.NAME]}   
           type="text" 
           isRequired={false} 
-          placeHolder="이름을 입력하세요" 
+          placeHolder={`${LABEL_FIELD[ID_FIELD.NAME]}을 다시 입력하세요`}
           value={inputs.name} 
           event={onInputChange}/>
-        <Input id="age" 
-          label="나이" 
+        <Input id={ID_FIELD.AGE} 
+          label={LABEL_FIELD[ID_FIELD.AGE]}  
           type="number" 
           isRequired={false} 
-          placeHolder="나이을 입력하세요" 
+          placeHolder={`${LABEL_FIELD[ID_FIELD.AGE]}를 다시 입력하세요`}
           value={inputs.age} 
           event={onInputChange}/>
         <Button/>
