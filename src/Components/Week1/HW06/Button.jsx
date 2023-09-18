@@ -1,10 +1,16 @@
-import React from 'react'
-import './Button.css'
+import React from "react";
+import "./Button.css";
 
-const Button = () => {
-  return ( 
-    <button type='submit' className='login-button'>가입하기</button>
-  )
-}
+const Button = ({ disabled, children, ...rest }) => {
+  return (
+    <button
+      className={`login-button ${disabled ? "button-disabled" : ""}`}
+      disabled={disabled}
+      {...rest}
+    >
+      {children}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

@@ -1,17 +1,23 @@
 .login-button {
   width: 100%;
   padding: 10px;
-  margin-top: 20px;
-  border: 1px solid #00AAFF;
+  margin-bottom: 20px;
+  border: 1px solid #00aaff;
   border-radius: 20px;
-  background-color: #00AAFF;
+  background-color: #00aaff;
   font-size: 16px;
   color: white;
   cursor: pointer;
   font-weight: bold;
 }
 
+.button-disabled {
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  pointer-events: none;
+}
+
 .login-button:hover {
-  background-color: #15608D;
-  border-color: #15608D;
+  background-color: #15608d;
+  border-color: #15608d;
 }
