@@ -1,7 +1,7 @@
 .todo-item {
   min-height: 50px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
   padding: 3px;
@@ -9,8 +9,8 @@
 
 .todo-item-text {
   display: block;
-  word-break:break-all;
-  width: 93%
+  word-break: break-all;
+  width: 93%;
 }
 .todo-item-button {
   width: 7%;

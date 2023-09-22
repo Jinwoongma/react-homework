@@ -1,13 +1,13 @@
-import React from 'react'
-import styles from './TodoListHeader.module.css'
+import React from "react";
+import styles from "./TodoListHeader.module.css";
 
-const TodoListHeader = ({title}) => {
+const TodoListHeader = ({ title }) => {
   return (
     // css.module에서 '-' 사용 시 주의
-    <div className={styles['todo-header']}> 
+    <div className={styles["todo-header"]}>
       <h1>{title}</h1>
     </div>
-  )
-}
+  );
+};
 
-export default TodoListHeader
+export default TodoListHeader;
