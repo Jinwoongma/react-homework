@@ -6,10 +6,13 @@ import './Week01.css';
 import About from './Components/Week1/HW03/About/About';
 import Skills from './Components/Week1/HW03/Skills/Skills';
 import Footer from './Components/Week1/HW03/Layout/Footer';
-import Header from './Components/Week1/HW03/Layout/Header';
+// import Header from './Components/Week1/HW03/Layout/Header';
 // import Layout from './Components/Week1/HW05/Layout';
 import Layout from './Components/Week1/HW06/Layout';
-import SignupForm from './Components/Week1/HW06/SignupForm';
+// import SignupForm from './Components/Week1/HW06/SignupForm';
+
+import Header from './Components/Week1/HW07/Header';
+import Body from './Components/Week1/HW07/Body';
 
 function Week01() {
   return (
@@ -39,8 +42,15 @@ function Week01() {
     //   <Skills/>
     //   <Footer/>
     // </Layout>
+
+    // 과제 6
+    // <Layout>
+    //   <SignupForm/>
+    // </Layout>
+
     <Layout>
-      <SignupForm/>
+        <Header/>
+        <Body/>
     </Layout>
   );
 }

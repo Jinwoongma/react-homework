@@ -1,0 +1,21 @@
+.header-wrapper {
+  display:flex;
+  background-color: #0aaf6b;
+  padding: 12px 15px 12px 20px;
+  /* height: 35px; */
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 3px lightgray;
+}
+
+.header-text {
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+
+.header-close-button {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}

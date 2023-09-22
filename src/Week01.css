@@ -7,9 +7,14 @@
 }
 
 .layout {
-  width: 80%;
-  margin: 0 auto;
+  /* width: 80%; */
+  width: 650px;
+  margin: 0;
   /* border: 1px solid gray; */
   height: 100vh;
+}
+
+.body {
+  padding: 20px;
 }
 
