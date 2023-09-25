@@ -1,7 +1,11 @@
 .msg-box {
   white-space: pre-wrap;
-  padding: 25px;
+  padding: 20px;
   font-size: 13px;
   background-color: #f8f8f8;
   color: #454545;
+}
+
+.msg-box > p {
+  line-height: 25px;
 }

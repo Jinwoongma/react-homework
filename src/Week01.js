@@ -13,6 +13,7 @@ import Layout from './Components/Week1/HW06/Layout';
 
 import Header from './Components/Week1/HW07/Header';
 import Body from './Components/Week1/HW07/Body';
+import Form from './Components/Week1/HW07/Form';
 
 function Week01() {
   return (

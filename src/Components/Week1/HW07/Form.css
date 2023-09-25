@@ -1,0 +1,68 @@
+.form-container {
+  padding: 25px;
+  border: 1px solid lightgrey;
+  margin: 20px 0;
+}
+
+.form-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group,
+.button-group {
+  display: flex;
+}
+
+.input-label {
+  font-weight: bold;
+}
+
+.input {
+  width: 60px;
+  height: 27px;
+  box-sizing: border-box;
+  margin: 0 5px 0 15px;
+}
+
+.input-unit {
+  padding-right: 5px;
+}
+
+.calculate-button,
+.reset-button {
+  width: 70px;
+  height: 27px;
+  color: white;
+  cursor: pointer;
+}
+
+.calculate-button {
+  background-color: green;
+}
+
+.reset-button {
+  background-color: grey;
+}
+
+.result-group {
+  margin-top: 10px;
+}
+
+.result {
+  display: flex;
+}
+
+.result-label {
+  width: 100px;
+  display: inline-block;
+}
+
+.result-value {
+  color: red;
+  font-weight: bold;
+}
+
+.placeholder-text {
+  margin-right: 40px;
+}
