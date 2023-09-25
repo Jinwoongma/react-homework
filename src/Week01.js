@@ -1,19 +1,19 @@
-import './Week01.css';
+import "./Week01.css";
 // import HW01 from './Components/Week1/HW01/HW01';
 // import HW02_Content from './Components/Week1/HW02/HW02_Content';
 // import HW02_Footer from './Components/Week1/HW02/HW02_Footer';
 // import HW02_Header from './Components/Week1/HW02/HW02_Header';
-import About from './Components/Week1/HW03/About/About';
-import Skills from './Components/Week1/HW03/Skills/Skills';
-import Footer from './Components/Week1/HW03/Layout/Footer';
+// import About from './Components/Week1/HW03/About/About';
+// import Skills from './Components/Week1/HW03/Skills/Skills';
+// import Footer from './Components/Week1/HW03/Layout/Footer';
 // import Header from './Components/Week1/HW03/Layout/Header';
 // import Layout from './Components/Week1/HW05/Layout';
-import Layout from './Components/Week1/HW06/Layout';
+import Layout from "./Components/Week1/HW06/Layout";
 // import SignupForm from './Components/Week1/HW06/SignupForm';
 
-import Header from './Components/Week1/HW07/Header';
-import Body from './Components/Week1/HW07/Body';
-import Form from './Components/Week1/HW07/Form';
+import Header from "./Components/Week1/HW07/Header";
+import Body from "./Components/Week1/HW07/Body";
+// import Form from './Components/Week1/HW07/Form';
 
 function Week01() {
   return (
@@ -50,8 +50,8 @@ function Week01() {
     // </Layout>
 
     <Layout>
-        <Header/>
-        <Body/>
+      <Header />
+      <Body />
     </Layout>
   );
 }
