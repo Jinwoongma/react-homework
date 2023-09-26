@@ -4,14 +4,60 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-  padding: 3px;
+  margin: 0px 3px 0px 3px;
 }
 
 .todo-item-text {
   display: block;
   word-break: break-all;
-  width: 93%;
+  width: 90%;
 }
-.todo-item-button {
-  width: 7%;
+.button-wrapper {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-item-edit-input {
+  display: block;
+  word-break: break-all;
+  width: 90%;
+  padding: 5px;
+}
+.todo-item-edit-button {
+  margin: 0px 5px 0px 5px;
+}
+
+.todo-item-delete-button {
+  margin: 0px 5px 0px 5px;
+}
+
+.todo-item-save-button {
+  width: 10%;
+  padding: 6px 0px 6px 0px;
+  background-color: transparent;
+  border: none;
+}
+
+.todo-item-save-button {
+  width: 10%;
+  padding: 6px 0px 6px 0px;
+  background-color: transparent;
+  border: none;
+}
+
+.todo-item-save-button:hover svg > polyline {
+  width: 10;
+  stroke: green;
+}
+
+.todo-item-edit-button:hover path {
+  stroke: green;
+  margin: 0px 5px 0px 5px;
+}
+
+.todo-item-delete-button:hover path {
+  stroke: red;
+  margin: 0px 5px 0px 5px;
 }

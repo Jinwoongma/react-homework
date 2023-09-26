@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./TodoList.module.css";
 import TodoListHeader from "./TodoListHeader";
 import TodoListInput from "./TodoListInput";
@@ -10,17 +10,24 @@ export const TodoContext = createContext();
 const initialState = [];
 
 const reducer = (state, action) => {
-  let newState = [];
   switch (action.type) {
     case "add":
-      newState = [...state, { id: action.id, text: action.value }];
-      break;
+      return [...state, { id: action.id, text: action.value }];
     case "delete":
-      return;
+      return state.filter((todo) => todo.id !== action.id);
+    case "editing":
+      return state.map((todo) =>
+        todo.id === action.id ? { ...todo, isEditing: true } : { ...todo }
+      );
+    case "edit":
+      return state.map((todo) =>
+        todo.id === action.id
+          ? { ...todo, text: action.value, isEditing: false }
+          : { ...todo }
+      );
     default:
       return state;
   }
-  return newState;
 };
 
 const TodoList = () => {

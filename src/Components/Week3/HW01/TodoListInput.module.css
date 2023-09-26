@@ -9,5 +9,16 @@
 }
 
 .todo-input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 10%;
+  border: 1px solid rgb(150, 11, 136);
+  background-color: rgb(150, 11, 136);
+  font-size: 18px;
+}
+
+.todo-input-icon > path {
+  fill: white;
+  stroke: white;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./TodoListInput.module.css";
+import { FaPlus } from "react-icons/fa";
 
 const TodoListInput = ({ value, onChange, onSubmit }) => {
   return (
@@ -12,7 +13,7 @@ const TodoListInput = ({ value, onChange, onSubmit }) => {
         onChange={onChange}
       />
       <button className={styles["todo-input-button"]} type="submit">
-        추가
+        <FaPlus className={styles["todo-input-icon"]} />
       </button>
     </form>
   );
